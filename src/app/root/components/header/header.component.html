@@ -1,0 +1,23 @@
+<div class="header" 
+     fxLayout="row"
+     fxLayoutAlign="center center"
+     fxLayout.lt-md="column">
+    <span fxFlex="85">
+        <img [src]="organization.image" alt="organization.name">
+    </span>
+    <div class="header__user-info" 
+         fxLayout="row" 
+         fxLayoutAlign="space-around center"
+         fxHide.lt-md>
+        <div class="info" 
+             fxLayout="row" 
+             fxLayoutAlign="center center">
+            <fa-icon class="nav-icon" [icon]="faBell" size="lg"></fa-icon>
+            <small>
+                {{userProfile.firstname}} {{userProfile.lastname}}-{{userProfile.role | titlecase}}
+            </small>
+        </div>
+        <img [src]="userProfile.avatarUrl" alt="avatar">
+        <small class="online"></small>
+    </div>
+</div>

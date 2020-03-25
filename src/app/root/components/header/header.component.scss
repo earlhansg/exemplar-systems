@@ -1,0 +1,33 @@
+:host {
+    width: 100%;
+}
+
+.header {
+    color: white;
+    margin: 10px 20px;
+
+    &__user-info {
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.info {
+    small {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+.online:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    margin-left: -8px;
+    margin-top: -17px;
+    width: 8px;
+    height: 8px;
+    border-radius: 7.5px;
+    background-color: rgb(26, 212, 26);
+}

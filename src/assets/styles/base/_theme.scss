@@ -3,20 +3,10 @@
 
 @include mat-core();
 
-// $primary: mat-palette($mat-pink, 300);
-// $accent: mat-palette($mat-grey, 100);
-// $warn: mat-palette($mat-deep-orange, A200);
-
-// $theme: mat-light-theme($primary, $accent, $warn);
-
-//the first two are the custom palettes we declared above
 $my-theme-primary: mat-palette($my-primary, 500);
 $my-theme-accent: mat-palette($my-accent);
-//the third, for the warn color, is the predefined material red palette
 $my-theme-warn: mat-palette($mat-red);
 
 $my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
 
 @include angular-material-theme($my-theme);
-
-// @include angular-material-theme($theme);
