@@ -1,0 +1,7 @@
+@function jpg($name) {
+    @return url('/assets/images/backgrounds/#{$name}.jpg');
+}
+
+@function png($name) {
+    @return url('/assets/images/bacgrounds/#{$name}.png');
+}
