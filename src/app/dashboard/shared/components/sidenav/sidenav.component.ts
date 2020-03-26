@@ -1,10 +1,14 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 
 import { animations } from './sidenav.animations';
 
 import { BreakPointService } from '@app/shared/services';
 
 import { Subscription } from 'rxjs';
+
+import { NavigationMenu, Tutorial } from '@app/dashboard/shared/models';
+
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidenav',
@@ -14,8 +18,14 @@ import { Subscription } from 'rxjs';
 })
 export class SidenavComponent implements OnInit, OnDestroy {
 
+  faArrowCircleRight = faArrowCircleRight;
   leftHeader: string;
   private breakpointsSubcription$: Subscription;
+
+  @Input()
+  navigationMenus: NavigationMenu[];
+  @Input()
+  tutorials: Tutorial[];
 
   constructor( private breakPointService: BreakPointService ) {}
 

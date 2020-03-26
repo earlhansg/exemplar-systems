@@ -1,5 +1,6 @@
 <div class="dashboard"  fxLayout="row" fxLayoutAlign="start none">
-    <app-sidenav></app-sidenav>
+    <app-sidenav [navigationMenus]="navigationMenus"
+                 [tutorials]="tutorials"></app-sidenav>
     <app-content>
         <router-outlet></router-outlet>
     </app-content>

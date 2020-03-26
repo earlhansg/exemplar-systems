@@ -1,3 +1,18 @@
 <div class="sidenav" [@slideLeft]="leftHeader">
-    <h1>Sidenav</h1>
+    <mat-nav-list>
+        <label>Navigations</label>
+        <a mat-list-item 
+           *ngFor="let nav of navigationMenus"> 
+           {{ nav.menuItem }} 
+           <fa-icon [icon]="faArrowCircleRight" size="lg"></fa-icon>
+        </a>
+    </mat-nav-list>
+    <mat-nav-list>
+        <label>Tutorials</label>
+        <a mat-list-item 
+           *ngFor="let tutorial of tutorials"> 
+           {{ tutorial.tutorialItem }}
+           <fa-icon [icon]="faArrowCircleRight" size="lg"></fa-icon>
+        </a>
+    </mat-nav-list>
 </div>
