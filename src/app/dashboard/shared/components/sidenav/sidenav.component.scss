@@ -1,0 +1,18 @@
+@import '../../../../../assets/styles/main';
+
+$start-breakpoint: 961px;
+
+:host {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 25%;
+    height: 76vh;
+
+    @include media($start-breakpoint) {
+        & {
+            margin-right: 0px;
+            width: 0;
+        }
+    }
+}
