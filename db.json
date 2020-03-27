@@ -8,8 +8,8 @@
   "profile": { "name": "typicode" },
   "employee": {
     "id": 1,
-    "firstname": "Ben",
-    "lastname": "Smith",
+    "firstName": "Ben",
+    "lastName": "Smith",
     "email": "test@exemplar.com",
     "usi": 232323232,
     "avatarUrl": "https://lms-special-content.s3-ap-southeast-2.amazonaws.com/pro.png",
@@ -20,45 +20,46 @@
   "employers": [
       {
         "id":1,
-        "organisation_name":"a company"
+        "organizationName":"a company"
       },
       {
         "id":2,
-        "organisation_name":"BHP"
+        "organizationName":"BHP"
       }
   ],
   "rtos":[
       {
-        "id":1,"organisation_name":"a company"
+        "id":1,
+        "organizationName":"a company"
       },
       {
         "id":2,
-        "organisation_name":"TAFENSW"
+        "organizationName":"TAFENSW"
       }
   ],
 
   "qualifications":[
     {
         "configuration":{},
-        "qualification_code":"UEE30820",
+        "qualificationCode":"UEE30820",
         "name":"UEE30820 Cert II in Electro",
         "id":1
     },
     {
         "configuration":{"work_areas":[
         {
-            "work_area":"Install / Terminate Wiring and Supports",
-            "equipment_types":
+            "workArea":"Install / Terminate Wiring and Supports",
+            "equipmentTypes":
             [
                     {
-                        "equipment_type":"Cable Support / Enclosure",
-                        "equipment_ranges":[
-                            {"equipment_range":"Cable tray / ladder"},
-                            {"equipment_range":"Catenary support"},
-                            {"equipment_range":"Conduit"},
-                            {"equipment_range":"Duct / trunking"},
-                            {"equipment_range":"Other supports or enclosures"},
-                            {"equipment_range":"Unenclosed support (e.g. clips, ties)"}]
+                        "equipmentType":"Cable Support / Enclosure",
+                        "equipmentRanges":[
+                            {"equipmentRange":"Cable tray / ladder"},
+                            {"equipmentRange":"Catenary support"},
+                            {"equipmentRange":"Conduit"},
+                            {"equipmentRange":"Duct / trunking"},
+                            {"equipmentRange":"Other supports or enclosures"},
+                            {"equipmentRange":"Unenclosed support (e.g. clips, ties)"}]
                     }
             ]
         }
