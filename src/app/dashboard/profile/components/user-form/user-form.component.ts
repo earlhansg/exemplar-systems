@@ -2,6 +2,8 @@ import { Component, ChangeDetectionStrategy, Input, Output,
     EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
+import { Employee, Employer, RTO } from '@app/dashboard/shared/models';
+
 import { Subscription, BehaviorSubject } from 'rxjs';
 
 
@@ -14,13 +16,13 @@ import { Subscription, BehaviorSubject } from 'rxjs';
 export class UserFormComponent implements OnChanges {
 
   @Input()
-  employee;
+  employee: Employee;
 
   @Input()
-  employers;
+  employers: Employer[];
 
   @Input()
-  rtos;
+  rtos: RTO[];
 
   @Output()
   update = new EventEmitter();
@@ -39,10 +41,10 @@ export class UserFormComponent implements OnChanges {
   constructor(private fb: FormBuilder) {}
 
   ngOnChanges(changes: SimpleChanges) {
-    // if (this.employee && this.employee.firstName) {
-    //   const { firstName, lastName, email, employer, rto } = this.employee;
-    //   this.form.patchValue({ firstName, lastName, email, employer, rto});
-    // }
+    if (this.employee && this.employee.firstName) {
+      const { firstName, lastName, email, employer, rto } = this.employee;
+      this.form.patchValue({ firstName, lastName, email, employer, rto});
+    }
   }
 
   updateEmployee() {

@@ -5,7 +5,7 @@ $start-breakpoint-718px: 718px;
 
 .user-form {
     width: 60%;
-    height: 40vh;
+    height: 63vh;
 
     // &__id {
     //     margin-top: 20px;
@@ -36,6 +36,28 @@ mat-label {
     font-size: 13px;
 }
 
+select {
+    font-size: 14px;
+    width: 50%;
+    background-color: white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    padding: 3px;
+    color: rgb(95, 95, 95);
+    @include media($start-breakpoint-718px) {
+        & {
+            width: 100%;
+        }
+    }
+}
+
+.form__employer, .form__rto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .horizontal {
     border-bottom: 1px solid rgb(194, 194, 194);
     width: 82%;
@@ -49,5 +71,14 @@ mat-label {
         & {
             display: none;
         }
+    }
+}
+
+.form-event {
+    margin-top: 5px;
+    margin-left: 15px;
+
+    button {
+        color: white;
     }
 }

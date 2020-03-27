@@ -4,7 +4,7 @@ $start-breakpoint: 961px;
 
 .profile {
     width: 60%;
-    padding-top: 15px;
+    padding-top: 5px;
     padding-left: 20px;
     &__header {
         margin: 10px;
@@ -26,5 +26,18 @@ hr {
         & {
             width: 97%;
         }
+    }
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    img {
+      margin: 0 10px 0 0;
     }
 }

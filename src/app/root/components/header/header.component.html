@@ -8,13 +8,14 @@
     <div class="header__user-info" 
          fxLayout="row" 
          fxLayoutAlign="space-around center"
-         fxHide.lt-md>
+         fxHide.lt-md
+         *ngIf="userProfile">
         <div class="info" 
              fxLayout="row" 
              fxLayoutAlign="center center">
             <fa-icon class="nav-icon" [icon]="faBell" size="lg"></fa-icon>
             <small>
-                {{userProfile.firstname}} {{userProfile.lastname}}-{{userProfile.role | titlecase}}
+                {{userProfile.firstName}} {{userProfile.lastName}}-{{userProfile.role | titlecase}}
             </small>
         </div>
         <img [src]="userProfile.avatarUrl" alt="avatar">

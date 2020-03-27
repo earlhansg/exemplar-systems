@@ -1,5 +1,5 @@
 <app-header [organization]="organization"
-            [userProfile]="userProfile"></app-header>
+            [userProfile]="userProfile$ | async"></app-header>
 
 <div class="container">
     <router-outlet></router-outlet>

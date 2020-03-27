@@ -4,4 +4,13 @@
     </div>
     <hr>
 </div>
-<app-user-form></app-user-form>
+<ng-container *ngIf="employee && employers && rtos; else loading">
+    <app-user-form [employee]="employee" [employers]="employers" [rtos]="rtos"></app-user-form>
+</ng-container>
+
+<ng-template #loading>
+    <div class="message">
+        <img src="assets/images/loading.svg">
+            Fetching ...
+    </div>
+</ng-template>
