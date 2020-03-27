@@ -4,11 +4,16 @@
     </div>
     <hr>
 </div>
+<!-- end of .profile -->
 
 <div class="container" fxLayout="row" fxLayout.lt-md="column">
 
     <ng-container *ngIf="employee && employers && rtos; else loading">
-        <app-user-form [employee]="employee" [employers]="employers" [rtos]="rtos"></app-user-form>
+        <app-user-form 
+            [employee]="employee" 
+            [employers]="employers" 
+            [rtos]="rtos"
+            (update)="onUpdate($event)"></app-user-form>
     </ng-container>
 
     <ng-template #loading>
@@ -23,3 +28,4 @@
     </ng-container>
 
 </div>
+<!-- end of .container -->

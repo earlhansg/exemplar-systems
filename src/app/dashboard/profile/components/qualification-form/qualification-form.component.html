@@ -14,15 +14,14 @@
             </div>
             <hr *ngIf="qualificationsList.controls.length">
         </div>
-
-        
+        <!-- end of .qualifation-list -->
         <div class="qualifation-event">
             <button mat-icon-button [disabled]="qualificationExist || notSelected" (click)="selectQualification()">
                 <fa-icon [icon]="faPlus" size="lg"></fa-icon>
             </button>
             <small>(add new qualification)</small>
         </div>
-
+        <!-- end of .qualifation-event -->
         <div class="selector" formGroupName="selector" fxLayout="row">
             <select formControlName="id">
                 <option value="">Select Qualification</option>
@@ -31,6 +30,8 @@
                 </option>
             </select>
         </div>
+        <!-- end of .selector -->
      </form>
      
 </div>
+<!-- end of .qualifation-form -->

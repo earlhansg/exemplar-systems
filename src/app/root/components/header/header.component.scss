@@ -12,6 +12,7 @@
         }
     }
 }
+// end of .header
 
 .info {
     small {
@@ -19,7 +20,7 @@
         margin-right: 3px;
     }
 }
-
+// end of .info
 .online:before {
     content: '';
     position: absolute;
@@ -31,3 +32,4 @@
     border-radius: 7.5px;
     background-color: rgb(26, 212, 26);
 }
+// end of .online:before

@@ -8,7 +8,7 @@ $start-breakpoint: 961px;
     @include media($start-breakpoint) {
         & {
             width: 100%;
-            margin-top: 25px;
+            margin-top: 35px;
             margin-bottom: 25px;
         }
     }
@@ -30,12 +30,14 @@ $start-breakpoint: 961px;
         margin-bottom: 5px;
     }
 }
+// end of .qualifation-list
 
 .qualifation-form {
     mat-label {
         font-size: 14px;
     }
 }
+// end of .qualifation-form
 
 .qualifation-event {
     button {
@@ -47,10 +49,12 @@ $start-breakpoint: 961px;
         margin-left: 3px;
     }
 }
+// end of .qualifation-event
 
 .selector {
     width: 100%;
 }
+// end of .selector
 
 select {
     font-size: 14px;
@@ -68,3 +72,4 @@ select {
         }
     }
 }
+// end of select 

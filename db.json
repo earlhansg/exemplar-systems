@@ -1,83 +1,105 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" },
+  "profile": {
+    "name": "typicode"
+  },
   "employee": {
     "id": 1,
     "firstName": "Ben",
     "lastName": "Smith",
     "email": "test@exemplar.com",
-    "usi": 232323232,
+    "employer": "2",
+    "rto": "2",
     "avatarUrl": "https://lms-special-content.s3-ap-southeast-2.amazonaws.com/pro.png",
-    "role": "student",
-    "employer": 2,
-    "rto": 2
+    "usi": 232323232,
+    "role": "student"
   },
   "employers": [
-      {
-        "id":1,
-        "organizationName":"a company"
-      },
-      {
-        "id":2,
-        "organizationName":"BHP"
-      }
-  ],
-  "rtos":[
-      {
-        "id":1,
-        "organizationName":"a company"
-      },
-      {
-        "id":2,
-        "organizationName":"TAFENSW"
-      }
-  ],
-
-  "qualifications":[
     {
-        "configuration":{},
-        "qualificationCode":"UEE30820",
-        "name":"UEE30820 Cert II in Electro",
-        "id": 1
+      "id": 1,
+      "organizationName": "a company"
     },
     {
-      "configuration":{},
-      "qualificationCode":"NCA123",
-      "name":"NCA123 Some Other Cert",
+      "id": 2,
+      "organizationName": "BHP"
+    }
+  ],
+  "rtos": [
+    {
+      "id": 1,
+      "organizationName": "a company"
+    },
+    {
+      "id": 2,
+      "organizationName": "TAFENSW"
+    }
+  ],
+  "qualifications": [
+    {
+      "configuration": {},
+      "qualificationCode": "UEE30820",
+      "name": "UEE30820 Cert II in Electro",
+      "id": 1
+    },
+    {
+      "configuration": {},
+      "qualificationCode": "NCA123",
+      "name": "NCA123 Some Other Cert",
       "id": 2
     },
     {
-      "configuration":{},
-      "qualificationCode":"NCA456",
-      "name":"NCA456 Some Other Cert",
+      "configuration": {},
+      "qualificationCode": "NCA456",
+      "name": "NCA456 Some Other Cert",
       "id": 3
     },
-    { 
-        "id": 5,
-        "configuration":{"work_areas":[
-        {
-            "workArea":"Install / Terminate Wiring and Supports",
-            "equipmentTypes":
-            [
-                    {
-                        "equipmentType":"Cable Support / Enclosure",
-                        "equipmentRanges":[
-                            {"equipmentRange":"Cable tray / ladder"},
-                            {"equipmentRange":"Catenary support"},
-                            {"equipmentRange":"Conduit"},
-                            {"equipmentRange":"Duct / trunking"},
-                            {"equipmentRange":"Other supports or enclosures"},
-                            {"equipmentRange":"Unenclosed support (e.g. clips, ties)"}]
-                    }
+    {
+      "id": 5,
+      "configuration": {
+        "work_areas": [
+          {
+            "workArea": "Install / Terminate Wiring and Supports",
+            "equipmentTypes": [
+              {
+                "equipmentType": "Cable Support / Enclosure",
+                "equipmentRanges": [
+                  {
+                    "equipmentRange": "Cable tray / ladder"
+                  },
+                  {
+                    "equipmentRange": "Catenary support"
+                  },
+                  {
+                    "equipmentRange": "Conduit"
+                  },
+                  {
+                    "equipmentRange": "Duct / trunking"
+                  },
+                  {
+                    "equipmentRange": "Other supports or enclosures"
+                  },
+                  {
+                    "equipmentRange": "Unenclosed support (e.g. clips, ties)"
+                  }
+                ]
+              }
             ]
-        }
-        ]}
+          }
+        ]
+      }
     }
-]
-
+  ]
 }

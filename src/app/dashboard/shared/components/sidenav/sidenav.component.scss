@@ -22,11 +22,12 @@ label {
     font-weight: bold;
     margin-left: 5px;
 }
+// end of label 
 
 .mat-list-item {
     font-size: 12px !important;
 }
-
+// end of .mat-list-item
 a {
     transition: all 0.1s !important;
     position: relative;
@@ -40,13 +41,13 @@ a {
         }
     }
 }
-
+// end of a 
 fa-icon {
     position: absolute;
     right: 9px;
     display: none;
 }
-
+// end of fa-icon
 
 .active {
     border-top-left-radius: 10px !important;
@@ -57,4 +58,4 @@ fa-icon {
         display: inherit;
     }
 }
-
+// end of active 

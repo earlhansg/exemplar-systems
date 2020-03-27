@@ -30,6 +30,8 @@ export class SidenavComponent implements OnInit, OnDestroy {
   constructor( private breakPointService: BreakPointService ) {}
 
   ngOnInit() {
+    // breakPointService is a service will determine the size of mobile size type
+    // return boolean
     this.breakpointsSubcription$ = this.breakPointService
       .checkBreakPoints()
       .subscribe((match: boolean) => {

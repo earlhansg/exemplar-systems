@@ -4,7 +4,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 
 import { Employee, Employer, RTO } from '@app/dashboard/shared/models';
 
-import { Subscription, BehaviorSubject } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -47,6 +47,7 @@ export class UserFormComponent implements OnChanges {
     }
   }
 
+  // emit data for container Profile Component
   updateEmployee() {
     if (this.form.valid) {
       this.update.emit(this.form.value);

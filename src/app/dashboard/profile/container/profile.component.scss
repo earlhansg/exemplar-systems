@@ -21,6 +21,7 @@ $start-breakpoint-718px: 718px;
         }
     }
 }
+// end of .profile
 
 .container {
     @include media($start-breakpoint-718px) {
@@ -30,7 +31,7 @@ $start-breakpoint-718px: 718px;
         }
     }
 }
-
+// end of .container
 hr {
     @include media($start-breakpoint) {
         & {
@@ -38,7 +39,7 @@ hr {
         }
     }
 }
-
+// end of hr 
 .message {
     display: flex;
     align-items: center;
@@ -51,3 +52,4 @@ hr {
       margin: 0 10px 0 0;
     }
 }
+// end of .message 

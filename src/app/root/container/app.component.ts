@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Store } from 'src/store';
 import { EmployeeService } from '@app/dashboard/shared/sevices';
 import { Employee } from '@app/dashboard/shared/models';
 
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +18,17 @@ export class AppComponent implements OnInit {
     image: 'https://lms-special-content.s3-ap-southeast-2.amazonaws.com/header-logo.png'
   };
   userProfile$: Observable<Employee>;
+  subscription: Subscription = new Subscription();
 
-  constructor(private employeeService: EmployeeService) {}
+  constructor(
+    private store: Store,
+    private employeeService: EmployeeService) {}
 
   ngOnInit() {
-    this.userProfile$ = this.employeeService.getEmployee();
+    this.userProfile$ = this.store.select<Employee>('employee');
+    this.subscription.add(
+      this.employeeService.getEmployee().subscribe()
+    );
   }
 
 }
