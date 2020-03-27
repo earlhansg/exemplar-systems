@@ -9,6 +9,7 @@ import { SharedModule } from '@app/shared/shared.module';
 import { DashboardComponent } from './container/dashboard.component';
 import { ContentComponent } from './shared/components/content/content.component';
 import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { SidenavComponent } from './shared/components/sidenav/sidenav.component'
   declarations: [
     DashboardComponent,
     ContentComponent,
-    SidenavComponent
+    SidenavComponent,
+    FooterComponent
   ]
 })
 export class DashboardModule { }
