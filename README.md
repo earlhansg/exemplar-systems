@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## How to run
 
 ```
-$ npm install       - Installs frontend dependencies
-$ npm start         - Runs your frontend application at http://localhost:4200
+$ npm install                 - Installs frontend dependencies
+$ json-server --watch db.json - Runs mock db.json
+$ npm start                   - Runs your frontend application at http://localhost:4200
 ```
