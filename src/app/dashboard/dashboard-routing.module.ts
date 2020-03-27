@@ -6,7 +6,19 @@ import { DashboardComponent } from './container/dashboard.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard', component: DashboardComponent
+    path: 'dashboard', component: DashboardComponent,
+    children: [
+      {
+        path: 'profile',
+        loadChildren: () => import('./profile/profile.module')
+        .then(mod => mod.ProfileModule)
+      },
+      {
+        path: '',
+        redirectTo: 'profile',
+        pathMatch: 'full'
+      },
+    ]
   }
 ];
 

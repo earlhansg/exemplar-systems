@@ -1,0 +1,53 @@
+<div class="user-form" fxLayout="column" fxLayoutAlign="center center">
+    <form [formGroup]="form" fxLayout="column" fxLayoutAlign="center">
+        <div class="form__firstname" fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign.lt-md="center center">
+          <mat-label>First Name</mat-label>
+          <mat-form-field>
+              <input matInput formControlName="firstName" type="text">
+          </mat-form-field>
+        </div>
+        <div class="horizontal"></div>
+        <div class="form__lastname" fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign.lt-md="center center">
+            <mat-label>Last Name</mat-label>
+          <mat-form-field>
+              <input matInput formControlName="lastName" type="text">
+          </mat-form-field>
+        </div>
+        <div class="horizontal"></div>
+        <div class="form__email" fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign.lt-md="center center">
+            <mat-label>Email</mat-label>
+          <mat-form-field>
+              <input matInput formControlName="email" type="text">
+          </mat-form-field>
+        </div>
+        <div class="horizontal"></div>
+
+        <!-- <div class="form__employer">
+            <mat-form-field>
+                <mat-label>Employer</mat-label>
+                <mat-select formControlName="employer">
+                  <mat-option *ngFor="let employer of employers" [value]="payment.paymentTypeId">
+                    {{employer.paymentTypeId}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form__rto">
+            <mat-form-field>
+                <mat-label>RTO</mat-label>
+                <mat-select formControlName="rto">
+                  <mat-option *ngFor="let list of rto" [value]="payment.paymentTypeId">
+                    {{employer.paymentTypeId}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div> -->
+        
+    </form>
+
+    <!-- <div class="form-event"  fxLayout="row" fxLayoutAlign="center center">
+         <button mat-raised-button
+                    (click)="updateEmployee()">Update</button>
+    </div> -->
+</div>

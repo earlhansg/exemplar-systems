@@ -1,0 +1,30 @@
+@import '../../../../assets/styles/main';
+
+$start-breakpoint: 961px;
+
+.profile {
+    width: 60%;
+    padding-top: 15px;
+    padding-left: 20px;
+    &__header {
+        margin: 10px;
+        mat-label {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+
+    @include media($start-breakpoint) {
+        & {
+            width: 100%;
+        }
+    }
+}
+
+hr {
+    @include media($start-breakpoint) {
+        & {
+            width: 97%;
+        }
+    }
+}

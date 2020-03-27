@@ -30,7 +30,7 @@ label {
 a {
     transition: all 0.1s !important;
     position: relative;
-    &:hover, &:active {
+    &:hover {
         border-top-left-radius: 10px !important;
         border-top-right-radius: 10px !important;
         background-color: $my-primary-500 !important;
@@ -45,5 +45,16 @@ fa-icon {
     position: absolute;
     right: 9px;
     display: none;
+}
+
+
+.active {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    background-color: $my-primary-500 !important;
+    color: white !important;
+    fa-icon {
+        display: inherit;
+    }
 }
 

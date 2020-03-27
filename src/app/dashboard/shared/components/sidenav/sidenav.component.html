@@ -2,7 +2,10 @@
     <mat-nav-list>
         <label>Navigations</label>
         <a mat-list-item 
-           *ngFor="let nav of navigationMenus"> 
+           *ngFor="let nav of navigationMenus" 
+           [routerLink]="nav.href" 
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}"> 
            {{ nav.menuItem }} 
            <fa-icon [icon]="faArrowCircleRight" size="lg"></fa-icon>
         </a>

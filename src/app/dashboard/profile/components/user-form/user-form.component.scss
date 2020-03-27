@@ -1,0 +1,53 @@
+@import '../../../../../assets/styles/main';
+
+$start-breakpoint: 961px;
+$start-breakpoint-718px: 718px;
+
+.user-form {
+    width: 60%;
+    height: 40vh;
+
+    // &__id {
+    //     margin-top: 20px;
+    // }
+
+    @include media($start-breakpoint) {
+        & {
+            width: 100%;
+        }
+    }
+}
+
+form {
+    width: 80%;
+}
+
+mat-form-field {
+    width: 50%;
+    @include media($start-breakpoint-718px) {
+        & {
+            width: 100%;
+        }
+    }
+}
+
+mat-label {
+    width: 30%;
+    font-size: 13px;
+}
+
+.horizontal {
+    border-bottom: 1px solid rgb(194, 194, 194);
+    width: 82%;
+    @include media($start-breakpoint) {
+        & {
+            margin-left: 53px;
+        }
+    }
+
+    @include media($start-breakpoint-718px) {
+        & {
+            display: none;
+        }
+    }
+}

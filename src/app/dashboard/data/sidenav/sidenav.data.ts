@@ -8,7 +8,7 @@ export const navigationMenus: NavigationMenu[] =
     },
     {
         menuItem: 'Profiling',
-        href: './homepage.html'
+        href: 'profile'
     }
 ];
 
