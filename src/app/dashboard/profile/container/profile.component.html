@@ -4,13 +4,22 @@
     </div>
     <hr>
 </div>
-<ng-container *ngIf="employee && employers && rtos; else loading">
-    <app-user-form [employee]="employee" [employers]="employers" [rtos]="rtos"></app-user-form>
-</ng-container>
 
-<ng-template #loading>
-    <div class="message">
-        <img src="assets/images/loading.svg">
-            Fetching ...
-    </div>
-</ng-template>
+<div class="container" fxLayout="row" fxLayout.lt-md="column">
+
+    <ng-container *ngIf="employee && employers && rtos; else loading">
+        <app-user-form [employee]="employee" [employers]="employers" [rtos]="rtos"></app-user-form>
+    </ng-container>
+
+    <ng-template #loading>
+        <div class="message">
+            <img src="assets/images/loading.svg">
+                Fetching ...
+        </div>
+    </ng-template>
+
+    <ng-container *ngIf="qualifications">
+        <app-qualification-form [qualifications]="qualifications"></app-qualification-form>
+    </ng-container>
+
+</div>

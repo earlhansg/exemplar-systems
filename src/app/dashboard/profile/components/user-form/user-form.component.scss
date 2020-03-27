@@ -3,13 +3,12 @@
 $start-breakpoint: 961px;
 $start-breakpoint-718px: 718px;
 
-.user-form {
-    width: 60%;
-    height: 63vh;
+:host {
+    width: 100%;
+}
 
-    // &__id {
-    //     margin-top: 20px;
-    // }
+.user-form {
+    height: 63vh;
 
     @include media($start-breakpoint) {
         & {

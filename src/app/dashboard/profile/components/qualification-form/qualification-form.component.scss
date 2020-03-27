@@ -1,0 +1,70 @@
+@import "../../../../../assets/styles/main";
+
+$start-breakpoint: 961px;
+
+:host {
+    width: 50%;
+
+    @include media($start-breakpoint) {
+        & {
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+
+.qualifation-list {
+    span {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    hr {
+        margin-top: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+.qualifation-form {
+    mat-label {
+        font-size: 14px;
+    }
+}
+
+.qualifation-event {
+    button {
+        fa-icon {
+            color: green
+        }
+    }
+    small {
+        margin-left: 3px;
+    }
+}
+
+.selector {
+    width: 100%;
+}
+
+select {
+    font-size: 14px;
+    width: 100%;
+    background-color: white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    padding: 3px;
+    color: rgb(95, 95, 95);
+    @include media($start-breakpoint) {
+        & {
+            width: 100%;
+        }
+    }
+}

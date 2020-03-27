@@ -1,6 +1,7 @@
 @import '../../../../assets/styles/main';
 
 $start-breakpoint: 961px;
+$start-breakpoint-718px: 718px;
 
 .profile {
     width: 60%;
@@ -17,6 +18,15 @@ $start-breakpoint: 961px;
     @include media($start-breakpoint) {
         & {
             width: 100%;
+        }
+    }
+}
+
+.container {
+    @include media($start-breakpoint-718px) {
+        & {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

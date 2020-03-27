@@ -7,6 +7,7 @@ import { SharedModule } from '@app/shared/shared.module';
 
 import { ProfileComponent } from './container/profile.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
+import { QualificationFormComponent } from './components/qualification-form/qualification-form.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { UserFormComponent } from './components/user-form/user-form.component';
   ],
   declarations: [
     ProfileComponent,
-    UserFormComponent
+    UserFormComponent,
+    QualificationFormComponent
   ]
 })
 export class ProfileModule { }
